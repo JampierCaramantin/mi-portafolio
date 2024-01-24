@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav .logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #144272;
+}
+a, li {
+    text-decoration: none;
+    list-style: none;
+    margin: 1rem;
+}
+
+#menu{
+    display: none;
+}
+.menu-ico{
+    width: 25px;
+}
+label{
+    cursor: pointer;
+    display: none;
+    margin: 1rem 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.menu a {
+    color: #144272;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.menu a:hover {
+    color: #2C74B3;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid #2C74B3;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.foto {
+    width: 250px;
+    height: 250px;
+    background-color: #2C74B3;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem;
+}
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slogan {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2C74B3;
+    margin: 1rem;
+    font-weight: 700;
+}
+.draw {
+    width: 600px;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+.draw img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portafolio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+.portafolio h3 {
+    color: #2C74B3;
+    font-size: 1.5rem;
+}
+.portafolio p {
+    color: #144272;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+.pag {
+    display: flex;
+    margin-top: 1.4rem;
+}
+.pg_folleto {
+    width: 500px;
+    overflow: hidden;
+    display: block; 
+}
+.pg_folleto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer {
+    background-color: #2C74B3;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.footer span {
+    color: #DCF2F1;
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+@media only screen and (max-width: 650px) {
+    .contenedor {
+        max-width: 90%;
+    }
+    .nav {
+        position: relative;
+    }
+    label{
+        cursor: pointer;
+        display: initial;
+    }
+    .menu {
+        position: absolute;
+        top: 100%;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        display: none;
+    }
+    #menu:checked ~ .menu {
+        display: initial;
+    }
+    .slogan {
+        font-size: 2rem;
+    }
+    .draw {
+        width: 100%;
+    }
+    .portafolio {
+        width: 100%;
+    }
+    .pag {
+        width: 100%;
+        flex-direction: column;
+    }
+    .pg_folleto {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
